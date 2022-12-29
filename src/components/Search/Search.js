@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useContext, useRef } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { useSearch } from "../../hooks/useSearch";
 import { MoviesContext } from "../../context/MoviesContext";
 
 import "./index.css";
 
-const Search = ({}) => {
-  const { searchMoviesError, searchMoviesRequest, errorMessage } =
+const Search = () => {
+  const { searchMoviesRequest, errorMessage } =
     useContext(MoviesContext);
   const [ searchTerm, setSearchTerm ] = useState(null);
   const { searchRequest } = useSearch();
@@ -17,7 +17,7 @@ const Search = ({}) => {
       }, 500)
   
       return () => clearTimeout(delayDebounceFn)
-  }, [searchTerm])
+  }, [searchTerm, searchMoviesRequest, searchRequest])
 
   return (
     <div className="input-component-wrapper">

@@ -1,8 +1,8 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { MoviesContext } from "../context/MoviesContext";
 
 export const useSearch = () => {
-  const { searchMoviesSuccess, searchMoviesError, searchMoviesRequest } =
+  const { searchMoviesSuccess, searchMoviesError } =
     useContext(MoviesContext);
 
   const searchRequest = (searchValue) => {

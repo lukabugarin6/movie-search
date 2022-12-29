@@ -22,7 +22,7 @@ const Slider = ({ slides }) => {
 
   useEffect(() => {
     swiper && swiper.slideTo(0, 0);
-  }, [movies]);
+  }, [movies, swiper]);
 
   return (
     <>
