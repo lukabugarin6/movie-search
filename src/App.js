@@ -51,10 +51,8 @@ function App() {
                 <h2>Results</h2>
                 <div className="movies-grid">
                   {movies.map((movie) => {
-                    console.log(movie);
                     return (
                       <div
-                        // className={`slideWrapper`}
                         style={{
                           backgroundImage: `url(${movie.Poster})`,
                           position: "relative",

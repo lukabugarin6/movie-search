@@ -10,8 +10,6 @@ const Search = ({}) => {
   const [ searchTerm, setSearchTerm ] = useState(null);
   const { searchRequest } = useSearch();
 
-  console.log('searchTerm', searchTerm);
-
   useEffect(() => {
       searchMoviesRequest();
       const delayDebounceFn = setTimeout(() => {
