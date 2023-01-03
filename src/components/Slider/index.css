@@ -98,5 +98,5 @@ body {
 }
 
 .swiper-button-disabled {
-  cursor: auto;
+  display: none;
 }

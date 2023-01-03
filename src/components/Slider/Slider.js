@@ -28,7 +28,7 @@ const Slider = ({ slides }) => {
     <>
       <div style={{ overflowX: "hidden", position: "relative" }}>
         <Swiper
-          slidesPerView={"auto"}
+          slidesPerView={'auto'}
           spaceBetween={18}
           allowTouchMove={false}
           navigation={{
@@ -40,7 +40,6 @@ const Slider = ({ slides }) => {
             swiper.params.navigation.nextEl = navigationNextRef.current;
           }}
           onSwiper={(swiper) => setSwiper(swiper)}
-          // loopFillGroupWithBlank={true}
           modules={[Navigation]}
           className="mySwiper"
         >
