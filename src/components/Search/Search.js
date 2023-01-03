@@ -17,7 +17,8 @@ const Search = () => {
       }, 500)
   
       return () => clearTimeout(delayDebounceFn)
-  }, [searchTerm, searchMoviesRequest, searchRequest])
+      // eslint-disable-next-line
+  }, [searchTerm])
 
   return (
     <div className="input-component-wrapper">
